@@ -49,6 +49,7 @@ public class ViewEntradaCachorro {
 	}
 	
 	public static int getIdadeCachorroFromUser() {
+		System.out.println("Entre com a idade do cachorro:");
 		try {
 			return getIdadeFromUser();
 		}catch (IdadeFormatException e) {

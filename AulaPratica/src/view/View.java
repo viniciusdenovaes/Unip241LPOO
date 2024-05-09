@@ -1,6 +1,5 @@
 package view;
 
-import java.util.Collection;
 import java.util.Scanner;
 
 import dados.Dados;
@@ -16,6 +15,7 @@ public class View {
 	public void init() {
 		
 		DaoCachorro.preencheDados(FILE_NAME, dados);
+		menu();
 	}
 	
 	public void save() {
@@ -30,7 +30,7 @@ public class View {
 			System.out.println("1 - para listar");
 			System.out.println("2 - para adicionar");
 			System.out.println("3 - para modificar idade");
-			System.out.println("0 - para adicionar");
+			System.out.println("0 - para sair");
 			Scanner in = new Scanner(System.in);
 			
 			String opcaoString = in.nextLine();
@@ -46,6 +46,10 @@ public class View {
 			}
 			case 2: {
 				menuAdicionar();
+				break;
+			}
+			case 3: {
+				menuModificarIdade();
 				break;
 			}
 			case 0: {
@@ -102,9 +106,10 @@ public class View {
 	
 	public void menuModificarIdade() {
 		
-		System.out.println("Escolha o cachorro");
+		System.out.println("Entre com o nome do cachorro:");
 		ViewSaidaCachorro.showCachorroSearchByName(dados);
 		
+		System.out.println("Entre com o id do cachorro:");
 		Scanner in = new Scanner(System.in);
 		String idString = in.nextLine();
 		try {

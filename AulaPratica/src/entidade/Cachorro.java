@@ -1,8 +1,8 @@
 package entidade;
 
-public class Cachorro implements Comparable<Cachorro>{
+public class Cachorro{
 	
-	private static int maiorId = Integer.MIN_VALUE;
+	private static int maiorId = 0;
 	
 	private int id;
 	private String nome;
@@ -52,7 +52,7 @@ public class Cachorro implements Comparable<Cachorro>{
 	
 	@Override
 	public String toString() {
-		return "Cachorro [id=" + id + ", nome=" + nome + ", idade=" + idade + "]";
+		return "" + id + " - " + nome + ", idade: " + idade;
 	}
 	
 	

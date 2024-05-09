@@ -31,7 +31,7 @@ public class DaoCachorro {
             String linha;
             while((linha = br.readLine()) != null){
 
-                String[] palavras = linha.split(";");
+                String[] palavras = linha.split(",");
                 
                 int id = Integer.parseInt(palavras[0]);
                 String nome = palavras[1];
