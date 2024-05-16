@@ -1,0 +1,15 @@
+{
+  "clientes" : [ {
+    "nome" : "vini",
+    "animais" : [ {
+      "nome" : "Brutus",
+      "idade" : 7
+    }, {
+      "nome" : "Rex",
+      "idade" : 8
+    }, {
+      "nome" : "Chirriro",
+      "idade" : 4
+    } ]
+  } ]
+}
